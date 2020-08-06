@@ -2,8 +2,9 @@
 
 Add minimap support to [CodeMirror](http://codemirror.net/).
 
-## 
+## Screenshot
 
+![](https://github.com/wlwywlqk/codemirror-minimap/blob/master/images/screenshot.png?raw=true "screenshot")
 
 ## Install
 
@@ -13,7 +14,7 @@ npm install codemirror-minimap
 
 ## How to use
 
-```
+```javascript
 import 'codemirror-minimap';
 import 'codemirror-minimap/src/minimap.css';
 
