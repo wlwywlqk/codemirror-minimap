@@ -2,6 +2,9 @@
 
 Add minimap support to [CodeMirror](http://codemirror.net/).
 
+## 
+
+
 ## Install
 
 ```npm
@@ -15,7 +18,7 @@ import 'codemirror-minimap';
 import 'codemirror-minimap/src/minimap.css';
 
 
-const editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+const editor = CodeMirror.fromTextArea(document.getElementById('code'), {
   minimap: true,
   // or minimap: { scale: 6 }
 });
