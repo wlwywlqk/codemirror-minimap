@@ -28,6 +28,7 @@
   "devDependencies": {
     "@rollup/plugin-typescript": "^5.0.2",
     "codemirror": "^5.56.0",
+    "tslib": "^2.0.0",
     "typescript": "^3.9.7"
   }
 }
