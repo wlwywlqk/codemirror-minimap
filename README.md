@@ -2,13 +2,13 @@
 
 Add minimap support to [CodeMirror](http://codemirror.net/).
 
-## install
+## Install
 
 ```npm
 npm install codemirror-minimap
 ```
 
-## how to use
+## How to use
 
 ```
 import 'codemirror-minimap';
