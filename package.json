@@ -1,6 +1,6 @@
 {
   "name": "codemirror-minimap",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "codemirror minimap",
   "main": "index.js",
   "scripts": {
