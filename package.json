@@ -1,0 +1,33 @@
+{
+  "name": "codemirror-minimap",
+  "version": "1.0.0",
+  "description": "codemirror minimap",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c rollup.config.js"
+  },
+  "keywords": [
+    "JavaScript",
+    "CodeMirror",
+    "Minimap",
+    "Editor"
+  ],
+  "author": "wlwywlqk",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wlwywlqk/codemirror-minimap.git"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.159",
+    "lodash": "^4.17.19"
+  },
+  "peerDependencies": {
+    "codemirror": ">=5.15.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^5.0.2",
+    "codemirror": "^5.56.0",
+    "typescript": "^3.9.7"
+  }
+}
