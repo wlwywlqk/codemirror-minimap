@@ -327,7 +327,7 @@ class InnerMinimap {
             this.$canvas.parentNode.removeChild(this.$canvas);
         }
         if (this.$root.parentNode) {
-            this.$root.parentNode.removeChild(this.$canvas);
+            this.$root.parentNode.removeChild(this.$root);
         }
     }
 
