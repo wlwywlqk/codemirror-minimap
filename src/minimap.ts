@@ -83,6 +83,7 @@ class Slider {
     }
 
     public destroy() {
+        this.$slider.removeEventListener('mousedown', this.onMousedown);
         if (this.$slider.parentNode) {
             this.$slider.parentNode.removeChild(this.$slider);
         }
@@ -284,10 +285,8 @@ class InnerMinimap {
         this.$container = this.cm.getWrapperElement();
 
         this.$root.setAttribute('class', 'CodeMirror-minimap');
-
         this.$canvas.setAttribute('class', 'CodeMirror-minimap__canvas');
         this.$root.appendChild(this.$canvas);
-
         this.$container.appendChild(this.$root);
 
         this.$scrollContainer = this.cm.getScrollerElement();
@@ -323,8 +322,12 @@ class InnerMinimap {
     }
 
     public destroy() {
+        this.slider.destroy();
         if (this.$canvas.parentNode) {
             this.$canvas.parentNode.removeChild(this.$canvas);
+        }
+        if (this.$root.parentNode) {
+            this.$root.parentNode.removeChild(this.$canvas);
         }
     }
 
@@ -440,6 +443,7 @@ class CodeMirrorMinimap {
         window.removeEventListener('resize', this.onResize);
         this.cm.off('scroll', this.onCMScroll);
         this.cm.off('update', this.onCMUpdate);
+        this.instance.destroy();
     }
 
     private onResize = lodash.throttle(() => {
