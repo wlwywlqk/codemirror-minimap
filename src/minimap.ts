@@ -60,6 +60,7 @@ class Slider {
     private onMouseup = () => {
         document.removeEventListener('mousemove', this.onMousemove);
         document.removeEventListener('mouseup', this.onMouseup);
+        document.onselectstart = null;
     }
 
     private onMousemove = (e: MouseEvent) => {
