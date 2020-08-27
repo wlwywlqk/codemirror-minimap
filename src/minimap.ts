@@ -352,6 +352,9 @@ class InnerMinimap {
             ctx.fillStyle = color;
             ctx.fillText(text, x, y + lineHeight);
             x += ctx.measureText(text).width;
+            if (x > this.$canvas.width) {
+                break;
+            }
         }
     }
 
