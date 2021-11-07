@@ -16,8 +16,8 @@ export interface FontInfo {
 }
 
 export interface RenderTokenData {
-    fontInfo: FontInfo,
-    text: string
+    fontInfo: FontInfo;
+    text: string;
 }
 
 export interface RenderLineData {
