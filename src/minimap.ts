@@ -13,9 +13,9 @@ export interface FontInfo {
     font: string;
     fontSize: number;
     color: string;
-};
+}
 
-export type RenderTokenData = {
+export interface RenderTokenData {
     fontInfo: FontInfo,
     text: string
 }
